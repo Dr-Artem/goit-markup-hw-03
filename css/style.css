@@ -9,9 +9,31 @@
 	--header-border: #ECECEC;
 
 }
+
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #212121;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	padding: 94px 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .item-blue {
@@ -22,6 +44,7 @@ body {
 /* top */
 .top {
 	border-bottom: 1px solid var(--header-border);
+	padding: 25px 0;
 }
 .top-logo-link {
 	 color: var(--main-color); /* Можна використати inherit */
@@ -32,8 +55,14 @@ body {
 	letter-spacing: 0.03em;
 	text-decoration: none;
 }
+.top-nav {
+	margin-left: 93px;
+	margin-right: auto;
+}
 .top-nav-links {
 	list-style: none;
+	display: flex;
+	gap: 50px;
 }
 .nav-link {
 	color: var(--main-color); /* Можна використати inherit */
@@ -43,12 +72,17 @@ body {
 	letter-spacing: 0.02em;
 	text-decoration: none;
 }
+.nav-link.is-active {
+	color: var(--additional-color);
+}
 .nav-link:focus,
 .nav-link:hover {
 	color: var(--additional-color);
 }
 .top-contact-links {
 	list-style: none;
+	display: flex;
+	gap: 50px;
 }
 .top-contact {
 	color: var(--muted-color);
@@ -69,10 +103,10 @@ body {
 /* index main - order */
 .order {
 	background-color: var(--order-footer-color);
-	height: 600px;
+	padding: 200px 0;
+	text-align: center;
 }
 .order-title {
-	font-family: 'Roboto';
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -80,6 +114,8 @@ body {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--accent-white-color);
+	max-width: 696px;
+	margin: 0 auto 30px;
 }
 .order-button {
 	font-family: 'Roboto';
@@ -92,7 +128,6 @@ body {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border: none;
 	border-radius: 4px;
-	padding: 6px 22px;
 	cursor: pointer;
 	padding: 10px 32px;
 }
@@ -100,6 +135,12 @@ body {
 /* index main - advantages */
 .advantages-list {
 	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+.advantages-list-item {
+	max-width: 270px;
 }
 .advantage-title {
 	font-weight: 700;
@@ -107,6 +148,7 @@ body {
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 .advantage-text {
 	font-size: 14px;
@@ -118,6 +160,9 @@ body {
 /* index main - working */
 .working-images-list{
 	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 .working-title {
 	font-weight: 700;
@@ -125,6 +170,7 @@ body {
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 50px;
 }
 
 /* index main - team */
@@ -134,12 +180,16 @@ body {
 .team-title {
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 42px;
+	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 50px;
 }
 .team-list {
 	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 .team-card {
 	max-width: 270px;
@@ -149,12 +199,16 @@ body {
 				0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
+.team-image {
+	margin-bottom: 30px;
+}
 .team-person-name {
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
 }
 .team-person-position {
 	font-size: 16px;
@@ -162,6 +216,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--muted-color);
+	margin-bottom: 30px;
 }
 /* end */
 
@@ -173,6 +228,10 @@ body {
 }
 .portfolio-filter {
 	list-style: none;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 .filter-button {
 	font-family: 'Roboto';
@@ -198,6 +257,9 @@ body {
 /* portfolio main - cards */
 .portfolio-cards {
 	list-style: none;
+	display: grid;
+	grid-template-columns: 370px 370px 370px;
+	gap: 30px;
 }
 .card {
 	max-width: 370px;
@@ -207,11 +269,15 @@ body {
 	text-decoration: none;
 	color: var(--main-color);  /* Можна використати inherit */
 }
+.context {
+	padding: 20px 24px;
+}
 .card-name {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	margin-bottom: 4px;
 }
 .card-text-muted {
 	font-size: 16px;
@@ -225,7 +291,10 @@ body {
 /* footer */
 .bottom {
 	background-color: var(--order-footer-color);
-	height: 252px;
+	padding: 60px 0;
+}
+.bottom-logo {
+	margin-bottom: 20px;
 }
 .bottom-logo-link {
 	font-family: 'Raleway';
@@ -238,6 +307,9 @@ body {
 }
 .bottom-contacts {
 	list-style: none;
+}
+.contact:not(:last-child) {
+	margin-bottom: 6px;
 }
 .bottom-contact-map {
 	font-style: normal;
@@ -261,4 +333,4 @@ body {
 .bottom-contact-map:hover {
 	color: var(--additional-color);
 }
-/* end */
+/* end */	
