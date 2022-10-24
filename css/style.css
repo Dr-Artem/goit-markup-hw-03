@@ -4,7 +4,7 @@
 	--muted-color: #757575;
 	--accent-white-color: #FFFFFF;
 	--team-filter-color: #F5F4FA;
-	--order-footer-color: #2F303A;
+	--order--footer-background-color: #2F303A;
 	--card-border: #EEEEEE;
 	--header-border: #ECECEC;
 
@@ -30,10 +30,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0 auto;
 }
 
+/* Загальний клас для всіх Flexbox елемнтів, щоб не повторювати стилі */
+/* В любий момент можна переназначити в тому чи іншому класі де викриствується */
 .flex {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
+}
+
+/* Щоб окремо не прописувати кожен раз до списків даний стиль, виніс його як загальний з даним класом */
+/* В любий момент можна переназначити в тому чи іншому класі де викриствується */
+.styled-list {
+	list-style: none;
 }
 
 .item-blue {
@@ -45,6 +52,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .top {
 	border-bottom: 1px solid var(--header-border);
 	padding: 25px 0;
+}
+.container.flex {
+	align-items: center;
 }
 .top-logo-link {
 	 color: var(--main-color); /* Можна використати inherit */
@@ -60,7 +70,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	margin-right: auto;
 }
 .top-nav-links {
-	list-style: none;
 	display: flex;
 	gap: 50px;
 }
@@ -80,7 +89,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	color: var(--additional-color);
 }
 .top-contact-links {
-	list-style: none;
 	display: flex;
 	gap: 50px;
 }
@@ -102,9 +110,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* index */
 /* index main - order */
 .order {
-	background-color: var(--order-footer-color);
-	padding: 200px 0;
+	background-color: var(--order--footer-background-color);
 	text-align: center;
+}
+.order.section {
+	padding: 200px 0;
 }
 .order-title {
 	font-weight: 900;
@@ -114,8 +124,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--accent-white-color);
-	max-width: 696px;
-	margin: 0 auto 30px;
+	margin-bottom: 30px;
 }
 .order-button {
 	font-family: 'Roboto';
@@ -133,12 +142,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* index main - advantages */
-.advantages-list {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-}
 .advantages-list-item {
 	max-width: 270px;
 }
@@ -158,11 +161,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* index main - working */
-.working-images-list{
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	gap: 30px;
+.working.section {
+	padding: 0 0 94px 0;
 }
 .working-title {
 	font-weight: 700;
@@ -177,6 +177,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .team {
 	background-color: var(--team-filter-color);
 }
+.team-image{
+	display: block;
+}
 .team-title {
 	font-weight: 700;
 	font-size: 36px;
@@ -184,12 +187,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	text-align: center;
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
-}
-.team-list {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	gap: 30px;
 }
 .team-card {
 	max-width: 270px;
@@ -227,7 +224,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	display: none;
 }
 .portfolio-filter {
-	list-style: none;
 	display: flex;
 	gap: 8px;
 	justify-content: center;
@@ -256,21 +252,22 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* portfolio main - cards */
 .portfolio-cards {
-	list-style: none;
 	display: grid;
 	grid-template-columns: 370px 370px 370px;
 	gap: 30px;
 }
 .card {
 	max-width: 370px;
-	border: 1px solid var(--card-border);
-}
-.card-link {
-	text-decoration: none;
-	color: var(--main-color);  /* Можна використати inherit */
 }
 .context {
 	padding: 20px 24px;
+	/* Кажуть робити по макету, а в ТЗ по іншому. Вирішив зробити чисто як в макеті, виглядає приємніше */
+	border-color: var(--card-border);
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+}
+.card-image {
+	display: block;
 }
 .card-name {
 	font-weight: 700;
@@ -290,7 +287,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* footer */
 .bottom {
-	background-color: var(--order-footer-color);
+	background-color: var(--order--footer-background-color);
 	padding: 60px 0;
 }
 .bottom-logo {
@@ -304,9 +301,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--accent-white-color);
-}
-.bottom-contacts {
-	list-style: none;
 }
 .contact:not(:last-child) {
 	margin-bottom: 6px;
