@@ -31,14 +31,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Загальний клас для всіх Flexbox елемнтів, щоб не повторювати стилі */
-/* В любий момент можна переназначити в тому чи іншому класі де викриствується */
-.flex {
+/* В любий момент можна переназначити в тому чи іншому класі де використовується */
+/* .flex {
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
 /* Щоб окремо не прописувати кожен раз до списків даний стиль, виніс його як загальний з даним класом */
-/* В любий момент можна переназначити в тому чи іншому класі де викриствується */
+/* В любий момент можна переназначити в тому чи іншому класі де використовується */
 .styled-list {
 	list-style: none;
 }
@@ -53,7 +53,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	border-bottom: 1px solid var(--header-border);
 	padding: 25px 0;
 }
-.container.flex {
+.top-flex {
+	display: flex;
 	align-items: center;
 }
 .top-logo-link {
@@ -117,6 +118,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	padding: 200px 0;
 }
 .order-title {
+	max-width: 696px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -124,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--accent-white-color);
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
 }
 .order-button {
 	font-family: 'Roboto';
@@ -142,6 +144,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* index main - advantages */
+.advantages-list {
+	display: flex;
+	justify-content: space-between;
+}
 .advantages-list-item {
 	max-width: 270px;
 }
@@ -172,13 +178,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
+.working-images-list {
+	display: flex;
+	justify-content: space-between;
+}
 
 /* index main - team */
 .team {
 	background-color: var(--team-filter-color);
-}
-.team-image{
-	display: block;
 }
 .team-title {
 	font-weight: 700;
@@ -188,15 +195,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
+.team-list {
+	display: flex;
+	justify-content: space-between;
+}
 .team-card {
 	max-width: 270px;
 	background: var(--accent-white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-				0px 1px 1px rgba(0, 0, 0, 0.14),
-				0px 2px 1px rgba(0, 0, 0, 0.2);
+		0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-.team-image {
+.team-image{
+	display: block;
 	margin-bottom: 30px;
 }
 .team-person-name {
