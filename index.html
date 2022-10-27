@@ -21,32 +21,34 @@
         <title>WebStudio</title>
     </head>
     <body>
-        <header class="top">
-            <div class="top-flex container">
-                <a class="top-logo-link" href="./index.html">
-                    <span class="item-blue">Web</span>Studio
+        <header class="page-header">
+            <div class="container page-header__flex-container flex-container">
+                <a class="logo page-header__logo" href="./index.html">
+                    <span class="logo__label">Web</span>Studio
                 </a>
-                <nav class="top-nav">
-                    <ul class="top-nav-links">
-                        <li class="nav-item">
-                            <a class="nav-link is-active" href="./index.html">Студія</a>
+                <nav class="navigation page-header__navigation">
+                    <ul class="navigation__list flex-container">
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation--active" href="./index.html"
+                                >Студія</a
+                            >
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакти</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="top-contact-links">
-                    <li class="contact-item" >
-                        <a class="top-contact" href="mailto:info@devstudio.com">
+                <ul class="contacts page-header__contacts flex-container">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contact-item" >
-                        <a class="top-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
@@ -55,37 +57,37 @@
         <main>
             <section class="order">
                 <div class="container">
-                    <h1 class="order-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="order-button" type="button">Замовити послугу</button>
+                    <h1 class="order__title">Ефективні рішення для вашого бізнесу</h1>
+                    <button class="order__button" type="button">Замовити послугу</button>
                 </div>
             </section>
             <section class="advantages section">
                 <div class="container">
-					<h2 class="hidden">Наші переваги</h2>
-                    <ul class="advantages-list">
-                        <li class="advantages-list-item">
-                            <h3 class="advantage-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                            <p class="advantage-text">
+                    <h2 class="hidden">Наші переваги</h2>
+                    <ul class="advantages__list flex-container">
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p class="advantages__text">
                                 Ідейні міркування, і навіть початок повсякденної роботи з формування
                                 позиції.
                             </p>
                         </li>
-                        <li class="advantages-list-item">
-                            <h3 class="advantage-title">ПУНКТУАЛЬНІСТЬ</h3>
-                            <p class="advantage-text">
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p class="advantages__text">
                                 Завдання організації, особливо рамки і місце навчання кадрів тягне у
                                 себе.
                             </p>
                         </li>
-                        <li class="advantages-list-item">
-                            <h3 class="advantage-title">ПЛАНУВАННЯ</h3>
-                            <p class="advantage-text">
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">ПЛАНУВАННЯ</h3>
+                            <p class="advantages__text">
                                 Так само консультація з широким активом значною мірою зумовлює.
                             </p>
                         </li>
-                        <li class="advantages-list-item">
-                            <h3 class="advantage-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                            <p class="advantage-text">
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p class="advantages__text">
                                 Значимість цих проблем настільки очевидна, що реалізація планових
                                 завдань.
                             </p>
@@ -95,27 +97,27 @@
             </section>
             <section class="working section">
                 <div class="container">
-					<h2 class="working-title">Чим ми займаємося</h2>
-                    <ul class="working-images-list">
-                        <li class="working-images-list-item">
+                    <h2 class="working__title">Чим ми займаємося</h2>
+                    <ul class="working__list flex-container">
+                        <li class="working__item">
                             <img
-                                class="working-image"
+                                class="working__image"
                                 src="./images/what-we-wotk-on/what-we-work-on-1.jpg"
                                 alt="person which typing on keyboard"
                                 width="370"
                             />
                         </li>
-                        <li class="working-images-list-item">
+                        <li class="working__item">
                             <img
-                                class="working-image"
+                                class="working__image"
                                 src="./images/what-we-wotk-on/what-we-work-on-2.jpg"
                                 alt="pesron looking at phone and working on laptop"
                                 width="370"
                             />
                         </li>
-                        <li class="working-images-list-item">
+                        <li class="working__item">
                             <img
-                                class="working-image"
+                                class="working__image"
                                 src="./images/what-we-wotk-on/what-we-work-on-3.jpg"
                                 alt="peson working on tablet"
                                 width="370"
@@ -126,67 +128,75 @@
             </section>
             <section class="team section">
                 <div class="container">
-					<h2 class="team-title">Наша команда</h2>
-                    <ul class="team-list">
-                        <li class="team-card">
+                    <h2 class="team__title">Наша команда</h2>
+                    <ul class="team__list flex-container">
+                        <li class="team__card">
                             <img
-                                class="team-image"
+                                class="team__image"
                                 src="./images/our-team/igor-demianenko.jpg"
                                 alt="Ігор Дем'яненко"
                                 width="270"
                                 height="260"
                             />
-                            <h3 class="team-person-name">Ігор Дем'яненко</h3>
-                            <p lang="en" class="team-person-position">Product Designer</p>
+                            <div class="team__info">
+                                <h3 class="team__person-name">Ігор Дем'яненко</h3>
+                                <p lang="en" class="team__person-position">Product Designer</p>
+                            </div>
                         </li>
-                        <li class="team-card">
+                        <li class="team__card">
                             <img
-                                class="team-image"
+                                class="team__image"
                                 src="./images/our-team/olga-riepyna.jpg"
                                 alt="Ольга Рєпіна"
                                 width="270"
                                 height="260"
                             />
-                            <h3 class="team-person-name">Ольга Рєпіна</h3>
-                            <p lang="en" class="team-person-position">Frontend Developer</p>
+                            <div class="team__info">
+                                <h3 class="team__person-name">Ольга Рєпіна</h3>
+                                <p lang="en" class="team__person-position">Frontend Developer</p>
+                            </div>
                         </li>
-                        <li class="team-card">
+                        <li class="team__card">
                             <img
-                                class="team-image"
+                                class="team__image"
                                 src="./images/our-team/mykola-tarasov.jpg"
                                 alt="Микола Тарасов"
                                 width="270"
                                 height="260"
                             />
-                            <h3 class="team-person-name">Микола Тарасов</h3>
-                            <p lang="en" class="team-person-position">Marketing</p>
+                            <div class="team__info">
+                                <h3 class="team__person-name">Микола Тарасов</h3>
+                                <p lang="en" class="team__person-position">Marketing</p>
+                            </div>
                         </li>
-                        <li class="team-card">
+                        <li class="team__card">
                             <img
-                                class="team-image"
+                                class="team__image"
                                 src="./images/our-team/mykhailo-iermakov.jpg"
                                 alt="Михайло Єрмаков"
                                 width="270"
                                 height="260"
                             />
-                            <h3 class="team-person-name">Михайло Єрмаков</h3>
-                            <p lang="en" class="team-person-position">UI Designer</p>
+                            <div class="team__info">
+                                <h3 class="team__person-name">Михайло Єрмаков</h3>
+                                <p lang="en" class="team__person-position">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
 
-        <footer class="bottom">
+        <footer class="page-footer">
             <div class="container">
-                <a class="bottom-logo-link" href="./index.html">
-                    <span class="item-blue">Web</span>Studio
+                <a class="logo page-footer__logo" href="./index.html">
+                    <span class="logo__label">Web</span>Studio
                 </a>
-                <address>
-                    <ul class="bottom-contacts">
-                        <li class="contact">
+                <address class="address page-footer__address">
+                    <ul class="address__list">
+                        <li class="address__item">
                             <a
-                                class="bottom-contact-map"
+                                class="address__map"
                                 href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -194,13 +204,13 @@
                                 м. Київ, пр-т Лесі Українки, 26
                             </a>
                         </li>
-                        <li class="contact">
-                            <a class="bottom-contact" href="mailto:info@devstudio.com">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@devstudio.com">
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="contact">
-                            <a class="bottom-contact" href="tel:+380961111111">
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380961111111">
                                 +38 096 111 11 11
                             </a>
                         </li>

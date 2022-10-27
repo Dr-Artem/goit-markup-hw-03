@@ -20,35 +20,35 @@
         <link href="./css/style.css" rel="stylesheet" />
         <title>WebStudio</title>
     </head>
-
     <body>
-		
-        <header class="top">
-            <div class="top-flex container">
-                <a class="top-logo-link" href="./index.html">
-                    <span class="item-blue">Web</span>Studio
+        <header class="page-header">
+            <div class="container page-header__flex-container flex-container">
+                <a class="logo page-header__logo" href="./index.html">
+                    <span class="logo__label">Web</span>Studio
                 </a>
-                <nav class="top-nav">
-                    <ul class="top-nav-links">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Студія</a>
+                <nav class="navigation page-header__navigation">
+                    <ul class="navigation__list flex-container">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="./index.html">Студія</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link is-active" href="./portfolio.html">Портфоліо</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation--active" href="./portfolio.html"
+                                >Портфоліо</a
+                            >
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакти</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="top-contact-links">
-                    <li class="contact-item" >
-                        <a class="top-contact" href="mailto:info@devstudio.com">
+                <ul class="contacts page-header__contacts flex-container">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contact-item" >
-                        <a class="top-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
@@ -58,147 +58,147 @@
             <section class="portfolio section">
                 <div class="container">
                     <h1 class="hidden">Portfolio</h1>
-                    <ul class="portfolio-filter styled-list">
-                        <li>
-                            <button class="filter-button" type="button">Усі</button>
+                    <ul class="filter portfolio__filter">
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Усі</button>
                         </li>
-                        <li>
-                            <button class="filter-button" type="button">Веб-сайти</button>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Веб-сайти</button>
                         </li>
-                        <li>
-                            <button class="filter-button" type="button">Додатки</button>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Додатки</button>
                         </li>
-                        <li>
-                            <button class="filter-button" type="button">Дизайн</button>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Дизайн</button>
                         </li>
-                        <li>
-                            <button class="filter-button" type="button">Маркетинг</button>
+                        <li class="filter__item">
+                            <button class="filter__button" type="button">Маркетинг</button>
                         </li>
                     </ul>
-                    <ul class="portfolio-cards">
-                        <li class="card">
-                            <a class="card-link" href="#">
+                    <ul class="portfolio__list">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/technocrack.jpg"
                                     alt="Ноутбук з відкрити сайтом"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Технокряк</h2>
-                                    <p class="card-text-muted">Веб-сайт</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Технокряк</h2>
+                                    <p class="card__text">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/poster-new-orlean.jpg"
                                     alt="Гра баскетбольних команд"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Постер New Orlean vs Golden Star</h2>
-                                    <p class="card-text-muted">Дизайн</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Постер New Orlean vs Golden Star</h2>
+                                    <p class="card__text">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/restaurant-seafood.jpg"
                                     alt="Постер ресторану"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Ресторан Seafood</h2>
-                                    <p class="card-text-muted">Додаток</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Ресторан Seafood</h2>
+                                    <p class="card__text">Додаток</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/project-prime.jpg"
                                     alt="Навушники"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Проєкт Prime</h2>
-                                    <p class="card-text-muted">Маркетинг</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Проєкт Prime</h2>
+                                    <p class="card__text">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/project-boxes.jpg"
                                     alt="Коробки"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Проєкт Boxes</h2>
-                                    <p class="card-text-muted">Додаток</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Проєкт Boxes</h2>
+                                    <p class="card__text">Додаток</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/inspirations-has-no-borders.jpg"
                                     alt="Місцезнаходження по карті світу"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Inspiration has no Borders</h2>
-                                    <p class="card-text-muted">Веб-сайт</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Inspiration has no Borders</h2>
+                                    <p class="card__text">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/journal-limited-edition.jpg"
                                     alt="Журнал"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Видання Limited Edition</h2>
-                                    <p class="card-text-muted">Дизайн</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Видання Limited Edition</h2>
+                                    <p class="card__text">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/project-lab.jpg"
                                     alt="Лейбл"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Проєкт LAB</h2>
-                                    <p class="card-text-muted">Маркетинг</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Проєкт LAB</h2>
+                                    <p class="card__text">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="card">
-                            <a class="card-link" href="#">
+                        <li class="card portfolio__card">
+                            <a class="card__link" href="#">
                                 <img
-                                    class="card-image"
+                                    class="card__image"
                                     src="./images/portfolio/growing-business.jpg"
                                     alt="Додаток для зростаючого бізнесу"
                                     width="370"
                                 />
-                                <div class="context">
-                                    <h2 class="card-name">Growing Business</h2>
-                                    <p class="card-text-muted">Додаток</p>
+                                <div class="card__context">
+                                    <h2 class="card__name">Growing Business</h2>
+                                    <p class="card__text">Додаток</p>
                                 </div>
                             </a>
                         </li>
@@ -207,16 +207,16 @@
             </section>
         </main>
 
-        <footer class="bottom">
+        <footer class="page-footer">
             <div class="container">
-                <a class="bottom-logo-link" href="./index.html">
-                    <span class="item-blue">Web</span>Studio
+                <a class="logo page-footer__logo" href="./index.html">
+                    <span class="logo__label">Web</span>Studio
                 </a>
-                <address>
-                    <ul class="bottom-contacts styled-list">
-                        <li class="contact">
+                <address class="address page-footer__address">
+                    <ul class="address__list">
+                        <li class="address__item">
                             <a
-                                class="bottom-contact-map"
+                                class="address__map"
                                 href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -224,13 +224,13 @@
                                 м. Київ, пр-т Лесі Українки, 26
                             </a>
                         </li>
-                        <li class="contact">
-                            <a class="bottom-contact" href="mailto:info@devstudio.com">
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@devstudio.com">
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="contact">
-                            <a class="bottom-contact" href="tel:+380961111111">
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380961111111">
                                 +38 096 111 11 11
                             </a>
                         </li>
