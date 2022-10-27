@@ -10,36 +10,44 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+            integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link href="./css/style.css" rel="stylesheet" />
         <title>WebStudio</title>
     </head>
+
     <body>
+		
         <header class="top">
             <div class="top-flex container">
                 <a class="top-logo-link" href="./index.html">
                     <span class="item-blue">Web</span>Studio
                 </a>
                 <nav class="top-nav">
-                    <ul class="top-nav-links styled-list">
-                        <li>
+                    <ul class="top-nav-links">
+                        <li class="nav-item">
                             <a class="nav-link" href="./index.html">Студія</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link is-active" href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="top-contact-links styled-list">
-                    <li>
+                <ul class="top-contact-links">
+                    <li class="contact-item" >
                         <a class="top-contact" href="mailto:info@devstudio.com">
                             info@devstudio.com
                         </a>
                     </li>
-                    <li>
+                    <li class="contact-item" >
                         <a class="top-contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -48,8 +56,8 @@
 
         <main>
             <section class="portfolio section">
-                <h1 class="hidden">Portfolio</h1>
                 <div class="container">
+                    <h1 class="hidden">Portfolio</h1>
                     <ul class="portfolio-filter styled-list">
                         <li>
                             <button class="filter-button" type="button">Усі</button>
@@ -67,114 +75,132 @@
                             <button class="filter-button" type="button">Маркетинг</button>
                         </li>
                     </ul>
-                    <ul class="portfolio-cards styled-list">
+                    <ul class="portfolio-cards">
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/technocrack.jpg"
-                                alt="Ноутбук з відкрити сайтом"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Технокряк</h2>
-                                <p class="card-text-muted">Веб-сайт</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/technocrack.jpg"
+                                    alt="Ноутбук з відкрити сайтом"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Технокряк</h2>
+                                    <p class="card-text-muted">Веб-сайт</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/poster-new-orlean.jpg"
-                                alt="Гра баскетбольних команд"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Постер New Orlean vs Golden Star</h2>
-                                <p class="card-text-muted">Дизайн</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/poster-new-orlean.jpg"
+                                    alt="Гра баскетбольних команд"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Постер New Orlean vs Golden Star</h2>
+                                    <p class="card-text-muted">Дизайн</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/restaurant-seafood.jpg"
-                                alt="Постер ресторану"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Ресторан Seafood</h2>
-                                <p class="card-text-muted">Додаток</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/restaurant-seafood.jpg"
+                                    alt="Постер ресторану"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Ресторан Seafood</h2>
+                                    <p class="card-text-muted">Додаток</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/project-prime.jpg"
-                                alt="Навушники"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Проєкт Prime</h2>
-                                <p class="card-text-muted">Маркетинг</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/project-prime.jpg"
+                                    alt="Навушники"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Проєкт Prime</h2>
+                                    <p class="card-text-muted">Маркетинг</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/project-boxes.jpg"
-                                alt="Коробки"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Проєкт Boxes</h2>
-                                <p class="card-text-muted">Додаток</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/project-boxes.jpg"
+                                    alt="Коробки"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Проєкт Boxes</h2>
+                                    <p class="card-text-muted">Додаток</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/inspirations-has-no-borders.jpg"
-                                alt="Місцезнаходження по карті світу"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Inspiration has no Borders</h2>
-                                <p class="card-text-muted">Веб-сайт</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/inspirations-has-no-borders.jpg"
+                                    alt="Місцезнаходження по карті світу"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Inspiration has no Borders</h2>
+                                    <p class="card-text-muted">Веб-сайт</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/journal-limited-edition.jpg"
-                                alt="Журнал"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Видання Limited Edition</h2>
-                                <p class="card-text-muted">Дизайн</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/journal-limited-edition.jpg"
+                                    alt="Журнал"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Видання Limited Edition</h2>
+                                    <p class="card-text-muted">Дизайн</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/project-lab.jpg"
-                                alt="Лейбл"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Проєкт LAB</h2>
-                                <p class="card-text-muted">Маркетинг</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/project-lab.jpg"
+                                    alt="Лейбл"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Проєкт LAB</h2>
+                                    <p class="card-text-muted">Маркетинг</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="card">
-                            <img
-                                class="card-image"
-                                src="./images/portfolio/growing-business.jpg"
-                                alt="Додаток для зростаючого бізнесу"
-                                width="370"
-                            />
-                            <div class="context">
-                                <h2 class="card-name">Growing Business</h2>
-                                <p class="card-text-muted">Додаток</p>
-                            </div>
+                            <a class="card-link" href="#">
+                                <img
+                                    class="card-image"
+                                    src="./images/portfolio/growing-business.jpg"
+                                    alt="Додаток для зростаючого бізнесу"
+                                    width="370"
+                                />
+                                <div class="context">
+                                    <h2 class="card-name">Growing Business</h2>
+                                    <p class="card-text-muted">Додаток</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

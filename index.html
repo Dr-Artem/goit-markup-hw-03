@@ -10,7 +10,13 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+            integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link href="./css/style.css" rel="stylesheet" />
         <title>WebStudio</title>
     </head>
@@ -21,25 +27,25 @@
                     <span class="item-blue">Web</span>Studio
                 </a>
                 <nav class="top-nav">
-                    <ul class="top-nav-links styled-list">
-                        <li>
+                    <ul class="top-nav-links">
+                        <li class="nav-item">
                             <a class="nav-link is-active" href="./index.html">Студія</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="top-contact-links styled-list">
-                    <li>
+                <ul class="top-contact-links">
+                    <li class="contact-item" >
                         <a class="top-contact" href="mailto:info@devstudio.com">
                             info@devstudio.com
                         </a>
                     </li>
-                    <li>
+                    <li class="contact-item" >
                         <a class="top-contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -47,16 +53,16 @@
         </header>
 
         <main>
-            <section class="order section">
-                <div class="order-context container">
+            <section class="order">
+                <div class="container">
                     <h1 class="order-title">Ефективні рішення для вашого бізнесу</h1>
                     <button class="order-button" type="button">Замовити послугу</button>
                 </div>
             </section>
             <section class="advantages section">
-                <h2 class="hidden">Наші переваги</h2>
                 <div class="container">
-                    <ul class="advantages-list styled-list">
+					<h2 class="hidden">Наші переваги</h2>
+                    <ul class="advantages-list">
                         <li class="advantages-list-item">
                             <h3 class="advantage-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                             <p class="advantage-text">
@@ -88,9 +94,9 @@
                 </div>
             </section>
             <section class="working section">
-                <h2 class="working-title">Чим ми займаємося</h2>
                 <div class="container">
-                    <ul class="working-images-list styled-list">
+					<h2 class="working-title">Чим ми займаємося</h2>
+                    <ul class="working-images-list">
                         <li class="working-images-list-item">
                             <img
                                 class="working-image"
@@ -119,9 +125,9 @@
                 </div>
             </section>
             <section class="team section">
-                <h2 class="team-title">Наша команда</h2>
                 <div class="container">
-                    <ul class="team-list styled-list">
+					<h2 class="team-title">Наша команда</h2>
+                    <ul class="team-list">
                         <li class="team-card">
                             <img
                                 class="team-image"
@@ -177,7 +183,7 @@
                     <span class="item-blue">Web</span>Studio
                 </a>
                 <address>
-                    <ul class="bottom-contacts styled-list">
+                    <ul class="bottom-contacts">
                         <li class="contact">
                             <a
                                 class="bottom-contact-map"
