@@ -1,14 +1,19 @@
 :root {
-	--main-color: #212121;
-	--additional-color: #2196F3;
-	--muted-color: #757575;
-	--accent-white-color: #FFFFFF;
+	/* text color */
+	--main-text-color: #212121;
+	--muted-text-color: #757575;
+	--address-link-text-color: #FFFFFF99;
+
+	/* background color */
 	--team-filter-color: #F5F4FA;
 	--order--footer-background-color: #2F303A;
 	--order-button-active: #188CE8;
+
+	/* additional-color */
+	--accent-color: #2196F3;
+	--accent-white-color: #FFFFFF;
 	--card-border: #EEEEEE;
 	--header-border: #ECECEC;
-
 }
 
 body {
@@ -24,7 +29,7 @@ ol {
 	margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
+h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;
 }
@@ -45,7 +50,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .logo__label {
-	color: var(--additional-color);
+	color: var(--accent-color);
 }
 
 
@@ -55,7 +60,6 @@ h1, h2, h3, h4, h5, h6, p, li {
 	
 }
 .page-header__flex-container {
-	display: flex;
 	align-items: center;
 }
 .logo {
@@ -67,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 	text-decoration: none;
 }
 .page-header__logo {
-	color: var(--main-color); /* Можна використати inherit */
+	color: var(--main-text-color); /* Можна використати inherit */
 	padding: 24px 0 25px 0;
 }
 .page-header__navigation {
@@ -78,7 +82,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 	margin-right: 50px;
 }
 .navigation__link {
-	color: var(--main-color); /* Можна використати inherit */
+	color: var(--main-text-color); /* Можна використати inherit */
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -87,17 +91,17 @@ h1, h2, h3, h4, h5, h6, p, li {
 	padding: 32px 0;
 }
 .navigation--active {
-	color: var(--additional-color);
+	color: var(--accent-color);
 }
 .navigation__link:focus,
 .navigation__link:hover {
-	color: var(--additional-color);
+	color: var(--accent-color);
 }
 .contacts__item:not(:last-child) {
 	margin-right: 50px;
 }
 .contacts__link {
-	color: var(--muted-color);
+	color: var(--muted-text-color);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -107,7 +111,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 .contacts__link:focus,
 .contacts__link:hover {
-	color: var(--additional-color);
+	color: var(--accent-color);
 }
 /* end */
 
@@ -137,7 +141,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 	line-height: 1.87;
 	letter-spacing: 0.06em;
 	color: var(--accent-white-color);
-	background-color: var(--additional-color);
+	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border: none;
 	border-radius: 4px;
@@ -167,7 +171,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: var(--muted-color);
+	color: var(--muted-text-color);
 }
 
 /* index main - working */
@@ -227,7 +231,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 	line-height: 19px;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--muted-color);
+	color: var(--muted-text-color);
 }
 /* end */
 
@@ -247,8 +251,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 	margin: -1px;
 }
 .portfolio__filter {
-	display: flex;
 	gap: 8px;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 50px;
 }
@@ -258,16 +262,16 @@ h1, h2, h3, h4, h5, h6, p, li {
 	font-size: 16px;
 	line-height: 1.62;
 	letter-spacing: 0.03em;
-	background: var(--team-filter-color);
+	background-color: var(--team-filter-color);
 	border: none;
 	border-radius: 4px;
 	padding: 6px 22px;
 	cursor: pointer;
 }
-.filter-button:focus,
-.filter-button:hover {
+.filter__button:focus,
+.filter__button:hover {
 	color: var(--accent-white-color);
-	background: var(--additional-color);
+	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 				0px 1px 2px rgba(0, 0, 0, 0.08),
 				0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -284,14 +288,12 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 /* Variant 2 */
 .portfolio__list {
-	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 }
 
 /* Variant 3 start*/
 /* .portfolio__list {
-	display: flex;
 	flex-wrap: wrap;
 }
 .card {
@@ -305,13 +307,13 @@ h1, h2, h3, h4, h5, h6, p, li {
 } */
 /* Variant 3 end */
 
-.card_link {
+.card__link {
 	text-decoration: none;
 }
 .card__image {
 	display: block;
 }
-.context {
+.card__context {
 	padding: 20px 24px;
 	border-color: var(--card-border);
 	border-style: solid;
@@ -323,13 +325,13 @@ h1, h2, h3, h4, h5, h6, p, li {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	margin-bottom: 4px;
-	color: var(--main-color);
+	color: var(--main-text-color);
 }
-.card_text {
+.card__text {
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.03em;
-	color: var(--muted-color);
+	color: var(--muted-text-color);
 }
 /* end */
 
@@ -344,29 +346,30 @@ h1, h2, h3, h4, h5, h6, p, li {
 	color: var(--accent-white-color);
 	margin-bottom: 20px;
 }
+.address__item {
+	max-height: 21px;
+}
 .address__item:not(:last-child) {
 	margin-bottom: 9px;
 }
 .address__map {
-	font-style: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	text-decoration: none;
 	color: var(--accent-white-color);
 }
 .address__link {
-	font-style: normal;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--address-link-text-color);
 	text-decoration: none;
 }
-.address__link:focus,
-.address__link:hover,
-.address__map:focus,
-.address__map:hover {
-	color: var(--additional-color);
+.address__link--style {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	height: 100%;
+}
+.address__link--style:focus,
+.address__link--style:hover
+{
+	color: var(--accent-color);
 }
 /* end */	
